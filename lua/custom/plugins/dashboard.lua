@@ -20,6 +20,13 @@ return {
             key = 'f',
           },
           {
+            icon = '󰙰 ',
+            desc = 'Restore',
+            group = 'Label',
+            action = 'lua MiniSessions.select(read)',
+            key = 'r',
+          },
+          {
             desc = " ToDo's",
             group = 'Label',
             action = 'edit ~/Nextcloud/Obsidian/Personal/Todo.md',

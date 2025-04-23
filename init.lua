@@ -1038,5 +1038,11 @@ require('lazy').setup({
 
 vim.opt.conceallevel = 1
 
+vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
+
+vim.keymap.set('n', '<leader>z', function()
+  require('zen-mode').toggle()
+end)
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

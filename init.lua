@@ -610,7 +610,7 @@ require('lazy').setup({
           if client ~= nil and client.name == 'ruff' then
             --Disable hover in favor of pyright
             client.server_capabilities.hoverProvider = false
-            -- client.server_capabilities.diagnosticProvider = false
+            client.server_capabilities.diagnosticProvider = false
           end
 
           -- The following code creates a keymap to toggle inlay hints in your
@@ -714,6 +714,8 @@ require('lazy').setup({
             },
           },
         },
+        -- Formatting
+        prettier = {},
       }
 
       -- Ensure the servers and tools above are installed
